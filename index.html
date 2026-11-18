@@ -67,7 +67,10 @@
             color: var(--gold);
             background: var(--bg);
             padding-top: var(--header-h);
-            min-height: 100vh
+            min-height: 100vh;
+            overflow-x: hidden;
+            /* جلوگیری از اسکرول افقی در موبایل */
+            width: 100%;
         }
 
         body {
@@ -312,9 +315,10 @@
             line-height: 1.7
         }
 
+        /* اصلاح ریسپانسیو گرید اصلی */
         .section__grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
             gap: clamp(1rem, 2.5vw, 1.5rem)
         }
 
@@ -750,6 +754,7 @@
             max-width: 1000px
         }
 
+        /* اصلاح ریسپانسیو لینک ایمیل */
         .contact__mail {
             display: flex;
             align-items: center;
@@ -764,7 +769,9 @@
             color: var(--gold-light);
             font-weight: 600;
             font-size: 0.95rem;
-            transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease
+            transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .contact__mail svg {
@@ -782,6 +789,7 @@
             outline: none
         }
 
+        /* اصلاح ریسپانسیو فرم */
         .contact__form {
             display: flex;
             flex-direction: column;
@@ -794,7 +802,9 @@
             border-radius: 20px;
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
-            position: relative
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .contact__form-row {
@@ -919,9 +929,10 @@
             color: #e66
         }
 
+        /* اصلاح ریسپانسیو گرید شبکه‌های اجتماعی */
         .contact__grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr));
             gap: 1rem;
             list-style: none;
             padding: 0;
@@ -1157,6 +1168,11 @@
             .about__image-wrap {
                 max-width: 300px
             }
+
+            /* حذف افکت پس‌زمینه عکس در موبایل برای جلوگیری از بیرون‌زدگی */
+            .about__image-wrap::after {
+                display: none;
+            }
         }
 
         @media (max-width:640px) {
@@ -1164,6 +1180,7 @@
                 display: inline-flex
             }
 
+            /* اصلاح منوی موبایل برای جلوگیری از بیرون‌زدگی و اسکرول */
             .site-nav {
                 position: fixed;
                 top: var(--header-h);
@@ -1178,7 +1195,9 @@
                 transform: translateY(-110%);
                 opacity: 0;
                 pointer-events: none;
-                transition: transform var(--transition), opacity var(--transition)
+                transition: transform var(--transition), opacity var(--transition);
+                max-height: calc(100vh - var(--header-h));
+                overflow-y: auto;
             }
 
             .site-nav.open {
@@ -1205,6 +1224,28 @@
             .contact__submit {
                 align-self: stretch;
                 width: 100%
+            }
+        }
+
+        /* اصلاح هدر در گوشی‌های خیلی کوچک (مثل ۳۲۰ پیکسل) */
+        @media (max-width: 400px) {
+            .site-header {
+                padding: 0 0.5rem;
+                gap: 0.5rem;
+            }
+
+            .site-header__actions {
+                gap: 0.5rem;
+            }
+
+            .logo {
+                font-size: 1rem;
+            }
+
+            .logo__mark {
+                width: 30px;
+                height: 30px;
+                font-size: 1rem;
             }
         }
 
