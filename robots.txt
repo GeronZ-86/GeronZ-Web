@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://geronz-86.github.io/GeronZ-Web/sitemap.xml

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | GeronZ.me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            background-image: radial-gradient(1200px 700px at 80% -10%, rgba(217, 180, 95, 0.12), transparent 60%),
+                radial-gradient(900px 600px at -10% 110%, rgba(217, 180, 95, 0.08), transparent 60%),
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: auto, auto, 40px 40px, 40px 40px;
+            color: #D9B45F;
+            font-family: 'Vazirmatn', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 1rem;
+            overflow: hidden;
+        }
+
+        /* دکمه‌های تغییر زبان */
+        .lang-switcher {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            display: flex;
+            gap: 2px;
+            padding: 3px;
+            background: #232323;
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+        }
+
+        .lang-switcher button {
+            padding: 4px 8px;
+            border: none;
+            background: transparent;
+            color: #888;
+            font-size: 0.72rem;
+            font-weight: 700;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            font-family: inherit;
+        }
+
+        .lang-switcher button:hover {
+            color: #D9B45F;
+        }
+
+        .lang-switcher button.active {
+            background: #D9B45F;
+            color: #111;
+        }
+
+        .container {
+            padding: 2rem;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: clamp(5rem, 18vw, 10rem);
+            font-weight: 900;
+            background: linear-gradient(135deg, #D9B45F, #F0D48A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            line-height: 1;
+            letter-spacing: -4px;
+            filter: drop-shadow(0 10px 30px rgba(217, 180, 95, 0.2));
+        }
+
+        p {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            color: #999;
+            margin: 1rem 0 2.5rem;
+            line-height: 1.6;
+        }
+
+        a.home-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: #D9B45F;
+            color: #111;
+            text-decoration: none;
+            padding: 1rem 2.5rem;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        a.home-btn:hover {
+            background: #F0D48A;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="lang-switcher">
+        <button type="button" data-lang="fa">FA</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="ru">RU</button>
+    </div>
+
+    <div class="container">
+        <h1>404</h1>
+        <p id="error-msg">صفحه‌ای که دنبالش بودی پیدا نشد.</p>
+        <a href="/GeronZ-Web/" class="home-btn" id="home-btn">بازگشت به خانه ←</a>
+    </div>
+
+    <script>
+
+        const translations = {
+            fa: {
+                title: '404 | GeronZ.me',
+                msg: 'صفحه‌ای که دنبالش بودی پیدا نشد.',
+                btn: 'بازگشت به خانه ←',
+                dir: 'rtl'
+            },
+            en: {
+                title: '404 | GeronZ.me',
+                msg: 'The page you are looking for does not exist.',
+                btn: '← Back to Home',
+                dir: 'ltr'
+            },
+            ru: {
+                title: '404 | GeronZ.me',
+                msg: 'Страница, которую вы ищете, не существует.',
+                btn: '← Вернуться на главную',
+                dir: 'ltr'
+            }
+        };
+
+        const msgEl = document.getElementById('error-msg');
+        const btnEl = document.getElementById('home-btn');
+        const langBtns = document.querySelectorAll('[data-lang]');
+
+        function setLanguage(lang) {
+
+            if (!translations[lang]) lang = 'fa';
+
+            const t = translations[lang];
+
+            document.documentElement.lang = lang;
+            document.documentElement.dir = t.dir;
+            document.title = t.title;
+            msgEl.textContent = t.msg;
+            btnEl.textContent = t.btn;
+
+            try {
+                localStorage.setItem('geronz-lang', lang);
+            } catch (e) { }
+
+
+            langBtns.forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+        }
+
+
+        let savedLang = 'fa';
+        try {
+            savedLang = localStorage.getItem('geronz-lang') || 'fa';
+        } catch (e) { }
+
+        setLanguage(savedLang);
+
+        langBtns.forEach(btn => {
+            btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+        });
+    </script>
+
+</body>
+
+</html>
