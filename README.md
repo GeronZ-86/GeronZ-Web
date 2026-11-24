@@ -269,7 +269,7 @@ i18n.de = {
   </thead>
   <tbody>
     <tr><td>🌐 وب‌سایت</td><td><a href="https://geronz-86.github.io/GeronZ-Web/">geronz-86.github.io/GeronZ-Web</a></td></tr>
-    <tr><td>💬 تلگرام</td><td><a href="https://t.me/GeronZ8">@GeronZ8</a></td></tr>
+    <tr><td>💬 تلگرام</td><td><a href="https://t.me/GeronZ8">@GeronZ_DeV</a></td></tr>
     <tr><td>🐙 گیت‌هاب</td><td><a href="https://github.com/GeronZ-86">@GeronZ-86</a></td></tr>
     <tr><td>💼 لینکدین</td><td><a href="https://www.linkedin.com/in/sobhan-hosseini-a57991384">sobhan-hosseini</a></td></tr>
     <tr><td>🐦 X (توییتر)</td><td><a href="https://x.com/sobh_n86">@sobh_n86</a></td></tr>
