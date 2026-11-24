@@ -6,7 +6,7 @@
 
 **پورتفولیوی شخصی — توسعه‌دهنده فرانت‌اند، بازی و طراح دوبعدی/سه‌بعدی**
 
-[🌐 مشاهده سایت](https://geronz-86.github.io/GeronZ-Web/) · [🐛 گزارش مشکل](https://github.com/GeronZ-86/GeronZ-Web/issues) · [💬 تماس](https://t.me/GeronZ8)
+[🌐 مشاهده سایت](https://geronz-86.github.io/GeronZ-Web/) · [🐛 گزارش مشکل](https://github.com/GeronZ-86/GeronZ-Web/issues) · [💬 تماس](https://t.me/GeronZ_DeV)
 
 ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
