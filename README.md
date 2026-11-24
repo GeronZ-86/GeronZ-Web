@@ -1,11 +1,10 @@
-```markdown
-# GeronZ-Web
-
 <div align="center">
 
-# GeronZ.me
+# GeronZ-Web
 
-پورتفولیوی شخصی — توسعه‌دهنده فرانت‌اند، بازی و طراح دوبعدی/سه‌بعدی
+### 🌐 [geronz.me](https://geronz-86.github.io/GeronZ-Web/)
+
+**پورتفولیوی شخصی — توسعه‌دهنده فرانت‌اند، بازی و طراح دوبعدی/سه‌بعدی**
 
 [🌐 مشاهده سایت](https://geronz-86.github.io/GeronZ-Web/) · [🐛 گزارش مشکل](https://github.com/GeronZ-86/GeronZ-Web/issues) · [💬 تماس](https://t.me/GeronZ8)
 
@@ -20,9 +19,15 @@
 
 ## 📸 پیش‌نمایش
 
-![پیش‌نمایش سایت](./preview.jpg)
+<div align="center">
+
+![پیش‌نمایش سایت](./img/og-cover.jpg)
+
+</div>
 
 ---
+
+<div dir="rtl">
 
 ## ✨ ویژگی‌ها
 
@@ -42,36 +47,51 @@
 
 ## 🛠 تکنولوژی‌ها
 
-| فناوری | کاربرد |
-|---|---|
-| **HTML5** | ساختار معنایی و دسترس‌پذیر |
-| **CSS3** | Grid، Flexbox، متغیرها، Media Queries |
-| **JavaScript (Vanilla)** | تعویض زبان، منوی موبایل، مخفی‌سازی ایمیل، ارسال فرم |
-| **Formspree** | دریافت پیام‌های فرم تماس بدون نیاز به بک‌اند |
-| **Vazirmatn** | فونت فارسی (Google Fonts) |
-| **SVG** | آیکن‌های درون‌خطی برندها |
+<table>
+  <thead>
+    <tr>
+      <th>فناوری</th>
+      <th>کاربرد</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>HTML5</b></td><td>ساختار معنایی و دسترس‌پذیر</td></tr>
+    <tr><td><b>CSS3</b></td><td>Grid، Flexbox، متغیرها، Media Queries</td></tr>
+    <tr><td><b>JavaScript (Vanilla)</b></td><td>تعویض زبان، منوی موبایل، مخفی‌سازی ایمیل، ارسال فرم</td></tr>
+    <tr><td><b>Formspree</b></td><td>دریافت پیام‌های فرم تماس بدون نیاز به بک‌اند</td></tr>
+    <tr><td><b>Vazirmatn</b></td><td>فونت فارسی (Google Fonts)</td></tr>
+    <tr><td><b>SVG</b></td><td>آیکن‌های درون‌خطی برندها</td></tr>
+  </tbody>
+</table>
 
 ---
 
 ## 📁 ساختار پروژه
 
-```text
-GeronZ-Web/
-├── index.html              # کل سایت (HTML + CSS + JS)
-├── 404.html                # صفحه خطای سفارشی سه‌زبانه
-├── robots.txt              # راهنمای ربات‌های جستجو
-├── sitemap.xml             # نقشه سایت برای گوگل
-├── README.md
-└── img/
-    ├── G.jpg               # تصویر پروفایل
-    ├── favicon.svg         # آیکن تب مرورگر
-    ├── og-cover.jpg        # تصویر پیش‌نمایش شبکه‌های اجتماعی
-    ├── warBorn.jpg
-    ├── Jojaa.jpg
-    ├── shepherd.jpg
-    ├── BWR.jpg
-    └── IslandMen.jpg
-```
+<table>
+  <thead>
+    <tr>
+      <th>فایل / پوشه</th>
+      <th>توضیح</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>index.html</code></td><td>کل سایت (HTML + CSS + JS)</td></tr>
+    <tr><td><code>404.html</code></td><td>صفحه خطای سفارشی سه‌زبانه</td></tr>
+    <tr><td><code>robots.txt</code></td><td>راهنمای ربات‌های جستجو</td></tr>
+    <tr><td><code>sitemap.xml</code></td><td>نقشه سایت برای گوگل</td></tr>
+    <tr><td><code>README.md</code></td><td>همین فایل</td></tr>
+    <tr><td><code>img/</code></td><td>پوشه‌ی تصاویر</td></tr>
+    <tr><td><code>img/G.jpg</code></td><td>تصویر پروفایل</td></tr>
+    <tr><td><code>img/favicon.svg</code></td><td>آیکن تب مرورگر</td></tr>
+    <tr><td><code>img/og-cover.jpg</code></td><td>تصویر پیش‌نمایش شبکه‌های اجتماعی</td></tr>
+    <tr><td><code>img/warBorn.jpg</code></td><td>تصویر پروژه</td></tr>
+    <tr><td><code>img/Jojaa.jpg</code></td><td>تصویر پروژه</td></tr>
+    <tr><td><code>img/shepherd.jpg</code></td><td>تصویر پروژه</td></tr>
+    <tr><td><code>img/BWR.jpg</code></td><td>تصویر پروژه</td></tr>
+    <tr><td><code>img/IslandMen.jpg</code></td><td>تصویر پروژه</td></tr>
+  </tbody>
+</table>
 
 ---
 
@@ -79,14 +99,20 @@ GeronZ-Web/
 
 ### روش ۱ — بدون سرور (ساده‌ترین)
 
+</div>
+
 ```bash
 git clone https://github.com/GeronZ-86/GeronZ-Web.git
 cd GeronZ-Web
 ```
 
+<div dir="rtl">
+
 سپس فایل `index.html` را در مرورگر باز کن. تمام.
 
 ### روش ۲ — با سرور محلی (توصیه‌شده برای تست کامل)
+
+</div>
 
 ```bash
 # با Python
@@ -98,6 +124,8 @@ npx serve .
 # یا با PHP
 php -S localhost:8000
 ```
+
+<div dir="rtl">
 
 سپس `http://localhost:8000` را باز کن.
 
@@ -120,6 +148,8 @@ php -S localhost:8000
 
 در انتهای `index.html`، آبجکت `i18n` را گسترش بده:
 
+</div>
+
 ```js
 i18n.de = {
   'nav.home': 'Startseite',
@@ -128,17 +158,24 @@ i18n.de = {
 };
 ```
 
+<div dir="rtl">
+
 و یک دکمه به `.lang-switcher` اضافه کن:
+
+</div>
 
 ```html
 <button type="button" data-set-lang="de" aria-pressed="false">DE</button>
 ```
 
+<div dir="rtl">
+
 ---
 
 ## ✉️ فرم تماس (Formspree)
 
-فرم تماس سایت به سرویس **Formspree** متصل است تا بدون نیاز به سرور یا بک‌اند، پیام‌ها مستقیم به ایمیل شما ارسال شوند. 
+فرم تماس سایت به سرویس **Formspree** متصل است تا بدون نیاز به سرور یا بک‌اند، پیام‌ها مستقیم به ایمیل شما ارسال شوند.
+
 برای تغییر ایمیل دریافت‌کننده، کافیست در کد JavaScript (بخش `initContactForm`) مقدار `FORM_ENDPOINT` را با لینک جدید خود در Formspree جایگزین کنید.
 
 ---
@@ -164,15 +201,23 @@ i18n.de = {
 
 ## 🔒 نکات امنیتی
 
-| مورد | پیاده‌سازی |
-|---|---|
-| **مخفی‌سازی ایمیل** | ایمیل به Base64 تبدیل شده و فقط با JS دیکد می‌شود |
-| **فرم تماس** | ارسال امن از طریق API سرویس Formspree (بدون دخالت بک‌اند شخصی) |
-| **هانی‌پات (Honeypot)** | فیلد مخفی `_gotcha` برای جلوگیری از ارسال پیام‌های اسپم ربات‌ها |
-| **لینک‌های خارجی** | همه دارای `rel="noopener noreferrer"` |
-| **Referrer** | `<meta name="referrer" content="strict-origin-when-cross-origin">` |
-| **HTTPS** | فعال از GitHub Pages |
-| **اسکریپت‌های شخص ثالث** | فقط Google Fonts (معتبر) و Formspree (برای فرم) |
+<table>
+  <thead>
+    <tr>
+      <th>مورد</th>
+      <th>پیاده‌سازی</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>مخفی‌سازی ایمیل</b></td><td>ایمیل به Base64 تبدیل شده و فقط با JS دیکد می‌شود</td></tr>
+    <tr><td><b>فرم تماس</b></td><td>ارسال امن از طریق API سرویس Formspree (بدون دخالت بک‌اند شخصی)</td></tr>
+    <tr><td><b>هانی‌پات (Honeypot)</b></td><td>فیلد مخفی <code>_gotcha</code> برای جلوگیری از ارسال پیام‌های اسپم ربات‌ها</td></tr>
+    <tr><td><b>لینک‌های خارجی</b></td><td>همه دارای <code>rel="noopener noreferrer"</code></td></tr>
+    <tr><td><b>Referrer</b></td><td><code>&lt;meta name="referrer" content="strict-origin-when-cross-origin"&gt;</code></td></tr>
+    <tr><td><b>HTTPS</b></td><td>فعال از GitHub Pages</td></tr>
+    <tr><td><b>اسکریپت‌های شخص ثالث</b></td><td>فقط Google Fonts (معتبر) و Formspree (برای فرم)</td></tr>
+  </tbody>
+</table>
 
 ---
 
@@ -181,6 +226,8 @@ i18n.de = {
 ### تغییر رنگ‌ها
 
 در `index.html`، ابتدای `<style>`، متغیرها را تغییر بده:
+
+</div>
 
 ```css
 :root {
@@ -192,6 +239,8 @@ i18n.de = {
   --header-h: 64px;       /* ارتفاع هدر */
 }
 ```
+
+<div dir="rtl">
 
 ---
 
@@ -211,20 +260,24 @@ i18n.de = {
 
 ## 📮 ارتباط
 
-<div align="center">
-
-| پلتفرم | لینک |
-|---|---|
-| 🌐 وب‌سایت | [geronz-86.github.io/GeronZ-Web](https://geronz-86.github.io/GeronZ-Web/) |
-| 💬 تلگرام | [@GeronZ8](https://t.me/GeronZ8) |
-| 🐙 گیت‌هاب | [@GeronZ-86](https://github.com/GeronZ-86) |
-| 💼 لینکدین | [sobhan-hosseini](https://www.linkedin.com/in/sobhan-hosseini-a57991384) |
-| 🐦 X | [@sobh_n86](https://x.com/sobh_n86) |
-| 📷 اینستاگرام | [@sobha.n8668](https://instagram.com/sobha.n8668) |
-| 📺 یوتیوب | [@GeronZ-86](https://youtube.com/@GeronZ-86) |
-| 📌 پینترست | [hsbhan6366](https://pinterest.com/hsbhan6366) |
-
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>پلتفرم</th>
+      <th>لینک</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>🌐 وب‌سایت</td><td><a href="https://geronz-86.github.io/GeronZ-Web/">geronz-86.github.io/GeronZ-Web</a></td></tr>
+    <tr><td>💬 تلگرام</td><td><a href="https://t.me/GeronZ8">@GeronZ8</a></td></tr>
+    <tr><td>🐙 گیت‌هاب</td><td><a href="https://github.com/GeronZ-86">@GeronZ-86</a></td></tr>
+    <tr><td>💼 لینکدین</td><td><a href="https://www.linkedin.com/in/sobhan-hosseini-a57991384">sobhan-hosseini</a></td></tr>
+    <tr><td>🐦 X (توییتر)</td><td><a href="https://x.com/sobh_n86">@sobh_n86</a></td></tr>
+    <tr><td>📷 اینستاگرام</td><td><a href="https://instagram.com/sobha.n8668">@sobha.n8668</a></td></tr>
+    <tr><td>📺 یوتیوب</td><td><a href="https://youtube.com/@GeronZ-86">@GeronZ-86</a></td></tr>
+    <tr><td>📌 پینترست</td><td><a href="https://pinterest.com/hsbhan6366">hsbhan6366</a></td></tr>
+  </tbody>
+</table>
 
 ---
 
@@ -232,13 +285,14 @@ i18n.de = {
 
 این پروژه تحت مجوز **MIT** منتشر شده است — استفاده، تغییر و توزیع آزاد است. لطفاً attribution را حفظ کن.
 
+</div>
+
 ---
 
-<div align="center">
+<div align="center" dir="rtl">
 
 **ساخته شده با ☕ و 🖤 توسط GeronZ**
 
 اگر این پروژه برایت الهام‌بخش بود، یک ⭐ به ریپازیتوری بده
 
 </div>
-```
